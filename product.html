@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <title>BOW BOW</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300..900&family=Plaster&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./product.css">
+</head>
+
+<body>
+
+
+    <nav>
+        <h1><a href="./index.html"><span class="fa-solid fa-paw"
+                    style="color: rgb(10, 10, 10); font-size: 24px;"></span>
+                Bow Bow</a></h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="./login.html">LOGIN/SIGNUP</a></li>
+                <li><a href="cart.html">
+  CART <i class="fa fa-shopping-cart"></i>
+  <span id="cart-badge" class="badge bg-danger ms-1">0</span>
+</a></li></li>
+
+
+
+                <li>
+                    <div class="contact-toggle" onclick="toggleTopContact()">CONTACT</div>
+                    <div class="contact-box" id="topContactBox">
+                        <p>Everyday! 9:30am - 7pm</p>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-volume" style="color: #007bff;"></i>
+                            <a href="tel:+918043060923">+91 8043060923</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp" style="color: #25d366;"></i>
+                            <a href="https://wa.me/917026392424" target="_blank">+91 7026392424</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" style="color: #9c27b0;"></i>
+                            <a href="mailto:support@bowbow.com">support@bowbow.com</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu" id="menu-btn">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+    <!-- ===== Sidebar ===== -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="./login.html">LOGIN/SIGNUP</a></li>
+           <li><a href="cart.html">
+  CART <i class="fa fa-shopping-cart"></i>
+  <span id="cart-badge" class="badge bg-danger ms-1">0</span>
+</a></li></li>
+            <li>
+                <div class="contact-toggle" onclick="toggleSidebarContact()">CONTACT</div>
+                <div class="contact-box" id="sidebarContactBox">
+                    <p><strong>Everyday:</strong> 9:30 AM – 7:00 PM</p>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-volume" style="color:#007bff;"></i>
+                        <a href="tel:+918043060923">+91 8043060923</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp" style="color:#25d366;"></i>
+                        <a href="https://wa.me/917026392424" target="_blank">+91 7026392424</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" style="color:#9c27b0;"></i>
+                        <a href="mailto:support@bowbow.com">support@bowbow.com</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- =======================product================= -->
+    <div class="product ">
+        <div class="row">
+            <!-- ------------leftbox--------------- -->
+            <div class="leftbox col-lg-2 ">
+
+                <ul class="list-unstyled ">
+                    <h6 class="mb-5 text-danger"> <u> Quick links </u></h6>
+                    <li><a href="#food-category">FOOD</a></li>
+                    <li><a href="#toy-category">TOY</a></li>
+                    <li><a href="#treats-category">TREATS</a></li>
+                    <li><a href="#travel-category">TRAVEL</a></li>
+                </ul>
+
+            </div>
+
+            <!-- ------------rightbox--------------- -->
+            <div class="rightbox col-lg-10   p-3 overflow-auto" style="height: 300vh;">
+                <!-- -------------------------dryfood--------------- -->
+                <h1 class="text-center ">FOOD</h1>
+                <div id="food-category" class="food-category">
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>  Dry food</u></h4>
+                    <div class="dry">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/d1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title ">Pedigree DRY FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./d1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/d2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title ">Royalchain DRY FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./d2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/d3.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fidele DRY FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./d3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/d4.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Hearty DRY FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./d4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/d5.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Drools DRY FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./d5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/d6.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pedigree DRY FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./d6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/d7.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mera DRY FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./d7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/d8.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Canine DRY FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./d8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- --------------------vegfood------------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Vegetarian food</u></h4>
+                    <div class="dry">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/v1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Drools Vegetarian FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./v1.html" class="btn btn-danger   ">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/v2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pedigree Vegetarian FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./v2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/v3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> Meatup Vegetarian FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./v3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/v4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Veggie dog Vegetarian FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./v4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/v5.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Hungrypaw Vegetarian FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./v5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/v6.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> Sara's Vegetarian FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./v6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ----------------wetfood---------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Wet food</u></h4>
+                    <div class="dry">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Drools Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w1.html" class="btn btn-danger   ">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> Pedigree Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wiggles Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w4.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Royalchain Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w5.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> Cuddle Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> Nutrish Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w7.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cesar Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w8.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Hearty Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w9.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Teddy Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w9.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/w10.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">GrainZero Wet FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./w10.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- -------------grainfreefood----------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>GrainFree food</u></h4>
+                    <div class="dry">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/g1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nature's recipe GrainFree FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./g1.html" class="btn btn-danger   ">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/g2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">N&D GrainFree FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./g2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/g3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Purina One GrainFree FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./g3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/g4.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Harringtone GrainFree FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./g4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/g5.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Whole Hearted GrainFree FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./g5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/g6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sniffy GrainFree FOOD</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./g6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- ======================toy-category============ -->
+                <h1 class="text-center  mt-5">TOY CATEGORY</h1>
+                <!-- ------------------fetch and tug toy------------------ -->
+                <div id="toy-category" class="toy-category ">
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Fetch and Tug toy</u></h4>
+                    <div class="fetch">
+
+
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f3.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f4.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f5.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f6.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f7.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f8.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f9.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f9.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/f10.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fetch and Tug toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./f10.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ---------------------interactive toy------------------ -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Interactive toy</u></h4>
+                    <div class="fetch">
+
+
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i5.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i7.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/i9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./i9.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- --------------roap toy-------------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Roap toy</u></h4>
+                    <div class="fetch">
+
+
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/r1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Roap toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./r1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/r2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Roap toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./r2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/r3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Roap toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./r3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/r4.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Roap toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./r4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/r5.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Roap toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./r5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/r6.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Roap toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./r6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/r7.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Roap toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./r7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/r8.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Roap toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./r8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ----------------------chewing toy--------------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u> Chewing toy</u></h4>
+                    <div class="fetch">
+
+
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/c1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chewing toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./c1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/c2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chewing toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./c2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/c3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chewing toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./c3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/c4.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chewing toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./c4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/c5.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chewing toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./c5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/c6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chewing toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./c6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/c7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chewing toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./c7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/c8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chewing toy</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./c8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- =====================TREATS CATEGORY======================== -->
+      <h1 class="text-center mt-5 ">TREATS CATEGORY</h1>
+      <!-- -------------TRAINING TREATS---------------- -->
+                <div id="treats-category" class="treats-category">
+
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>TRAINING TREATS</u></h4>
+                    <div class="travel">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nuts Muttus TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dog Feast TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat3.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Jerhigh TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat4.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pup-Peroni TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat5.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Olli TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wiggles TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat7.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Prime300 TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat8.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> Fozzys TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/treat9.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">HZ TRAINING TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="treat9.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- ----------BISCUIT------------ -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>BISCUIT</u></h4>
+                    <div class="travel">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/BISCUIT1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pedigree BISCUIT</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="BISCUIT1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/BISCUIT2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Purepet BISCUIT</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="BISCUIT2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/BISCUIT3.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> Milk bone  BISCUIT</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="BISCUIT3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/BISCUIT4.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zoom Bark BISCUIT</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="BISCUIT4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/BISCUIT5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Portland BISCUIT</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="BISCUIT5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/BISCUIT6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Doggie BISCUIT</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="BISCUIT6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- ------------CALCIUM TREATS--------------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>CALCIUM TREATS</u></h4>
+                    <div class="travel">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Drools CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Gnawlers CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium4.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Woo food CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium5.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zoom Bark CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium6.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Drools CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium7.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kennel kitchen</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium8.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dog chef CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Boltz CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium9.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/calcium10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Gnawlers CALCIUM TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="calcium10.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ----------CHEW TREATS---------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>CHEW TREATS</u></h4>
+                    <div class="travel">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Loving pet CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dogsee CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Choice CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Waggo CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew5.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Milk-bone CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Eco kind CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pet care CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dental CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/chew9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wag CHEW TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="chew9.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+
+                    <!-- --------------MEAT TREATS-------------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>MEAT TREATS</u></h4>
+                    <div class="travel">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dog feast MEAT TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat1.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pedigree MEAT TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat2.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat3.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Skylrt MEAT TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat3.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Real MEAT TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat4.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Jerhigh meat TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat5.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Open farm MEAT TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat6.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat7.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Drools MEAT TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat7.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat8.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wiggles & wags MEAT TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat8.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/meat9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lily's MEAT TREATS</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="meat9.html" class="btn btn-danger">View product</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- ============================BEDDING & TRAVEL CATEGORY============== -->
+                    <h1 class="text-center mt-5 ">BEDDING & TRAVEL CATEGORY</h1></h1>
+                              <!-- ------------------bowls------------ -->
+                <div id="travel-category" class=".travel-category">
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Bowls</u></h4>
+                    <div class="treats">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl1.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl2.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl3.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl4.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl5.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl6.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl6.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl7.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl8.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl9.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bowl10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowls</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bowl10.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        
+
+                    </div>
+
+
+                    <!-- ------------------------beds------------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Beds</u></h4>
+                    <div class="treats">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bed1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Beds</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bed1.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bed2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Beds</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bed2.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bed3.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Beds</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bed3.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bed4.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Beds</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bed4.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bed5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Beds</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bed5.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bed6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Beds</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bed6.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bed7.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Beds</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./bed7.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ----------------blakets---------------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Blakets</u></h4>
+                    <div class="treats">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bl1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blakets</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./blakets1.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bl2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blakets</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./blakets2.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bl3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blakets</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./blakets3.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bl4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blakets</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./blakets4.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bl5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blakets</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./blakets5.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bl6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blakets</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./blakets6.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bl7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blakets</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./blakets7.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/bl8.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blakets</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./blakets8.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                
+                    </div>
+
+                    <!-- -------------cooling mats---------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Cooling mats</u></h4>
+                    <div class="treats">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/cool1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cooling mats</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./cool1.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/cool2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cooling mats</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./cool2.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/cool3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cooling mats</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./cool3.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/cool4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cooling mats</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./cool4.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                    
+                    </div>
+
+                    <!-- ----------------mattress--------------- -->
+                    <h4 class="mt-5" style="color: rgb(142, 21, 21);"> <u>Mattress</u></h4>
+                    <div class="treats">
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/mat1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mattress</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./mat1.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/mat2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mattress</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./mat2.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;">
+                            <div class="offer-tag">20% OFF</div>
+                            <img src="./img/mat3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mattress</h5>
+                                <p class="card-text">Rs.300</p>
+                                <a href="./mat3.html" class="btn btn-danger">View product</a>
+                           </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- =====================footer================== -->
+        <div class="box5">
+            <div class="footer-bg"></div>
+            <footer>
+                <div class="last">
+                    <h1 class="fs-3 "><a href="#"><span class="fa-solid fa-paw"
+                                style="color: white; font-size: 24px;"></span> Bow
+                            Bow</a></h1>
+                    <ul>
+                        <h1 class="fs-5">INFORMATION</h1>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Bulk Ordering</a></li>
+
+                    </ul>
+                    <ul>
+                        <h1 class="fs-5">CUSTOMER SERVICE</h1>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                    </ul>
+
+
+                    <div class="box6 w-25">
+                        <h3 class="fs-5">NEWSLETTER</h3>
+                        <input type="text" class="mt-3">
+                        <p class="text-wrap">NR TOWERS, 17th Cross, Sector 4,
+                            19th Main Rd, HSR Layout, Bengaluru - 560102</p>
+                        <ul class="d-flex gap-3 w-25">
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-whatsapp"></i></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <hr>
+                <p class="text-center">Copyright © 2025 Bow Bow . All Rights Reserved.</p>
+
+            </footer>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+        </script>
+        <script src="./product.js"></script>
+</body>
+
+</html>

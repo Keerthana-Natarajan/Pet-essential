@@ -1,0 +1,555 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+
+
+a{
+    text-decoration: none;
+    /* color: white; */
+}
+
+:root{
+  --orange: #d71c0f;
+}
+
+
+nav {
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  background-color: #FDEBED;
+}
+
+nav h1{
+     font-family: "Grenze Gotisch", serif;
+   font-size: 30px;
+   padding-top: 10px;
+  /* color: #063d65; */
+}
+
+nav h1 a{
+  color:black;
+  /* text-decoration: none; */
+}
+
+
+
+
+.navbar{
+  display: block;
+}
+
+
+nav ul{
+  display: flex;
+  /* text-transform: capitalize; */
+  text-decoration: none;
+
+}
+
+nav ul li{
+  font-size: 15px;
+  list-style: none;
+ padding:15px  50px 0px 0px;
+}
+
+nav ul li a{
+  color: black;
+  font-weight: 700;
+}
+
+nav ul li a:hover{
+  text-decoration:underline;
+}
+
+
+
+span{
+  font-size: 40px;
+}
+
+.menu {
+  display: flex;
+ padding: 20px 0px 0px 0px;
+  flex-direction: column;
+ row-gap: 10px;
+  cursor: pointer;
+}
+
+#menu-btn{
+  display: none;
+  
+}
+
+
+/* ============contact========= */
+
+
+
+.contact-item i {
+  margin-right: 8px;
+}
+
+
+ .contact-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .contact-toggle:hover{
+      text-decoration: underline;
+    }
+
+    .contact-box {
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      width: 280px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      padding: 20px;
+      display: none;
+      z-index: 100;
+    }
+
+    .contact-box p {
+      font-size: 14px;
+      margin-bottom: 12px;
+      color: #111;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .contact-item i {
+      font-size: 18px;
+      width: 25px;
+      margin-right: 10px;
+    }
+
+    .contact-item a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+
+/* Sidebar styles */
+.sidebar {
+ 
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: pink;
+  color: white;
+  transition: left 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar ul {
+    text-transform: capitalize;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #555;
+}
+
+.sidebar ul li a {
+  color: rgb(40, 39, 39);
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+    text-decoration: underline;
+}
+
+.sidebar.active {
+  left: 0; /* slide in */
+}
+
+/* ====================product================= */
+.product{
+  overflow-x: hidden;
+
+ 
+}
+
+ .leftbox {
+      /* background-color: #ffeef0; */
+      padding: 3rem;
+      
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto; /* only if needed */
+}
+     
+    
+    .leftbox ul {
+      list-style: none;
+      
+    }
+        .leftbox ul li {
+      margin: 10px 0;
+      cursor: pointer;
+     padding-bottom: 20px;
+      font-weight: bold;
+    }
+
+   .rightbox h4 {
+text-align: center;
+margin-bottom: 20px;
+   }
+    .rightbox .card img {
+      object-fit: cover;
+      height: 200px;
+    }
+
+  .rightbox .card-title{
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: medium;
+    }
+.rightbox .offer-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgb(5, 76, 158);
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+  }
+.rightbox::-webkit-scrollbar {
+  display: none;  
+}
+     .dry{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:left;
+      gap: 10px;
+
+    }
+    .fetch{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: left;
+
+    }
+   .travel{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: left;
+
+    }
+   .treats{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: left;
+
+    }
+   
+/* ======================footer====================== */
+
+.box5 {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  
+}
+
+.footer-bg {
+  background: url(./img/bg\ dog4.avif) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  filter: brightness(0.3); /* Optional dark overlay for readability */
+}
+
+footer,
+footer .last,
+footer .last * {
+  position: relative;
+  z-index: 1; /* Content appears above the image */
+}
+
+.box5 {
+
+  /* background-color: pink; */
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
+}
+
+.box5 hr,
+.box5 p {
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.last {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin-top: 20px; */
+  padding: 50px 0px 20px 0px; 
+}
+
+.last h1 a {
+    color: white;
+  text-decoration: none;
+    font-family: "Grenze Gotisch", serif;
+}
+
+.last ul {
+  padding: 0;
+  margin: 0;
+}
+
+.last ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.last ul li a {
+  color: rgb(177, 174, 174);
+  text-decoration: none;
+}
+
+.box6 {
+  max-width: 300px;
+}
+
+.box6 input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.box6 ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.box6 ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.box5 .para{
+    color:  rgb(177, 174, 174);
+}
+
+
+
+
+
+
+
+
+
+/* ==============================media query============== */
+
+@media  all and (max-width:768px) {
+
+  .navbar{
+  display: none;
+}
+
+  #menu-btn{
+  display: block;
+  
+}
+
+.menu-line {
+
+  width: 30px;
+  height: 5px;
+  
+  background-color: rgb(6, 6, 6);
+}
+
+
+    .sidebar {
+  position: fixed;
+  /* top: 10%; */
+  left: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: rgb(245, 163, 177);
+  color: rgb(11, 11, 11);
+  transition: left 0.3s ease;
+  padding-top: 30px;
+  z-index: 1000;
+}
+
+/* ============contact========= */
+ .contact-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: normal;
+      color: #000;
+    }
+
+.contact-box {
+  display: none;
+  background-color:whitesmoke;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  width: 250px;
+  top: 200px;
+  left: 15px;
+  /* margin: px 0; */
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+    .contact-item i {
+      margin-right: 10px;
+    }
+
+    .contact-item a {
+      
+      text-decoration: none;
+      color: #000;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-heading {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+.leftbox {
+  position: sticky;
+  height: auto;
+  padding: 1rem;
+ 
+}
+.leftbox .list-unstyled {
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+ justify-content: left;
+
+}
+
+.leftbox .list-unstyled li{
+  padding: 30px 0px 0px 0px;
+  position: relative;
+  right: 40px;
+
+ 
+}
+.dry{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      gap: 10px;
+
+    }
+    .fetch{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+
+    }
+   .travel{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+
+    }
+   .treats{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+
+    }
+    /* ========================footer===================== */
+
+
+  .last {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box6 {
+    width: 100% !important;
+    max-width: 90%;
+    margin-top: 20px;
+  }
+
+  .box6 ul {
+    justify-content: center;
+  }
+
+  .box6 input {
+    width: 80%;
+    
+  }
+
+  .last ul {
+    padding: 0;
+    margin: 10px 0;
+  }
+
+}
+
+
+
+

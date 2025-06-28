@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOW BOW</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Plaster&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- =============navbar=============== -->
+  <div class="top">
+    <p>First Order deal! Flat 10% OFF above Rs. 1500-Code: WELCOME </p>
+  </div>
+
+  <nav>
+    <h1><a href="./index.html"><span class="fa-solid fa-paw" style="color: rgb(10, 10, 10); font-size: 24px;"></span>
+        Bow Bow</a></h1>
+    <div class="navbar">
+      <ul>
+        <li><a href="./login.html">LOGIN/SIGNUP</a></li>
+        <li> <li><a href="cart.html">
+  CART <i class="fa fa-shopping-cart"></i>
+  <span id="cart-badge" class="badge bg-danger ms-1">0</span>
+</a></li></li>
+
+
+
+        <li>
+          <div class="contact-toggle" onclick="toggleTopContact()">CONTACT</div>
+          <div class="contact-box" id="topContactBox">
+            <p>Everyday! 9:30am - 7pm</p>
+            <div class="contact-item">
+              <i class="fas fa-phone-volume" style="color: #007bff;"></i>
+              <a href="tel:+918043060923">+91 8043060923</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp" style="color: #25d366;"></i>
+              <a href="https://wa.me/917026392424" target="_blank">+91 7026392424</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope" style="color: #9c27b0;"></i>
+              <a href="mailto:support@bowbow.com">support@bowbow.com</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu" id="menu-btn">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+    </div>
+  </nav>
+
+  <!-- ===== Sidebar ===== -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="./login.html">LOGIN/SIGNUP</a></li>
+     <li><a href="cart.html">
+  CART <i class="fa fa-shopping-cart"></i>
+  <span id="cart-badge" class="badge bg-danger ms-1">0</span>
+</a></li></li>
+      <li>
+        <div class="contact-toggle" onclick="toggleSidebarContact()">CONTACT</div>
+        <div class="contact-box" id="sidebarContactBox">
+          <p><strong>Everyday:</strong> 9:30 AM – 7:00 PM</p>
+          <div class="contact-item">
+            <i class="fas fa-phone-volume" style="color:#007bff;"></i>
+            <a href="tel:+918043060923">+91 8043060923</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp" style="color:#25d366;"></i>
+            <a href="https://wa.me/917026392424" target="_blank">+91 7026392424</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope" style="color:#9c27b0;"></i>
+            <a href="mailto:support@bowbow.com">support@bowbow.com</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- =====================search======================= -->
+  <div class="search">
+    <form action="#">
+      <input type="text" name="" id="" placeholder="Search for Dog food, toys, treats, etc,.....">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- ===============================slider=============== -->
+  <section class="hero-section container-fluid">
+    <div class="row align-items-center w-100">
+      <!-- Left Content -->
+      <div class="col-lg-6  hero-content">
+        <h1>Premium <br> Pet Essentials for<br><span>Happy, Healthy Pets</span></h1>
+        <p>Discover our curated collection of high-quality pet food, toys, accessories, and care products. Everything
+          your
+          furry friend needs, delivered to your door.</p>
+        <div class="hero-buttons">
+          <button onclick="scrollToCategory()">Shop Now</button>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-6 mt-4 mt-lg-0">
+      <div class="slider ">
+
+        <img src="./img/b1.avif" alt="">
+        <img src="./img/b2.jpg" alt="">
+        <img src="./img/b5.jpg" alt="" class="active">
+        <img src="./img/b4.png" alt="">
+        <img src="./img/b3.webp" alt="">
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ------------------------offer------------------------- -->
+
+
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+
+    
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: WELCOME</h6>
+          <p>Extra 10% OFF on First order Rs. 1500</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: SAVE100</h6>
+          <p>₹100 OFF on orders above ₹999</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: FESTIVE</h6>
+          <p>15% OFF on festive sale</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: SAVE100</h6>
+          <p>₹100 OFF on orders above ₹999</p>
+        </div>
+      </div>
+
+
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: WELCOME</h6>
+          <p>Extra 10% OFF on First order Rs. 1500</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: SAVE100</h6>
+          <p>₹100 OFF on orders above ₹999</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: FESTIVE</h6>
+          <p>15% OFF on festive sale</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: WELCOME</h6>
+          <p>Extra 10% OFF on First order Rs. 1500</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: SAVE100</h6>
+          <p>₹100 OFF on orders above ₹999</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: FESTIVE</h6>
+          <p>15% OFF on festive sale</p>
+        </div>
+      </div>
+
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: WELCOME</h6>
+          <p>Extra 10% OFF on First order Rs. 1500</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: SAVE100</h6>
+          <p>₹100 OFF on orders above ₹999</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: FESTIVE</h6>
+          <p>15% OFF on festive sale</p>
+        </div>
+      </div>
+      <div class="code">
+        <h1>&#x1F43E;</h1>
+        <div class="icon">
+          <h6>Use code: SAVE100</h6>
+          <p>₹100 OFF on orders above ₹999</p>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+<!-- ================Category============== -->
+
+<section id="shop-category">
+    <h1 class="text-center  text-danger">Shop by Category</h1>
+    <p class="text-center mt-4 fs-3 text-secondary">Find everything your pet needs from our carefully curated selection
+      of <br> premium products</p>
+
+  </section>
+
+
+  <!-- ===========================dog food================== -->
+
+  <h2 class="food mt-3  text-center">Dog Food</h2>
+
+  <div class="product  mx-3 text-nowrap">
+
+
+
+
+
+    <div class="p1 mt-3">
+
+      <a href="./product.html"> <img src="./img/dry food.webp" alt="..."></a>
+
+      <h6 class=" mt-5 m text-center">DRY FOODS</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+
+
+      <button class="button2 mt-4 mx-5 "><a href="./product.html">SEE MORE</a></button>
+
+
+
+    </div>
+
+    <div class="p1 mt-3">
+
+      <a href="./product.html"> <img src="./img/veg food.webp" alt="..."></a>
+
+      <h6 class=" mt-5 text-center">VEGETARIAN FOODS</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+
+
+      <button class="button2 mt-4 mx-5"><a href="./product.html">SEE MORE</a></button>
+
+
+
+    </div>
+
+    <div class="p1 mt-3">
+
+      <a href="./product.html"> <img src="./img/wet food.jpg" alt="..."></a>
+
+      <h6 class=" mt-5 text-center">WET FOODS</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+
+
+      <button class="button2 mt-4 mx-5"><a href="./product.html">SEE MORE</a></button>
+
+
+
+    </div>
+    <div class="p1 mt-3">
+
+      <a href="./product.html"> <img src="./img/grain food.avif" alt="..."></a>
+
+      <h6 class=" mt-5 text-center">GRAIN FREE FOODS</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+
+
+      <button class="button2 mt-4 mx-5"><a href="./product.html">SEE MORE</a></button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+  <!-- ==========================dog toy================ -->
+
+  <div class="toy d-flex pt-5 py-5 mt-5  px-0 justify-content-evenly">
+
+    <div class="card mb-3" style="max-width: 590px;">
+      <div class="row g-0">
+
+        <div class="col-md-7">
+         <a href="./product.html"> <img src="./img/Playful-temptations-min.png" class="img-fluid  rounded-start" alt="..."></a>
+        </div>
+
+        <div class="col-md-5">
+          <div class="card-body">
+            <h5 class="card-title">DOG TOY</h5>
+            <ul>
+              <li><a href="./product.html">fetch and tug toy</a></li>
+              <li><a href="./product.html">interactive toy</a></li>
+              <li><a href="./product.html">roap toy</a></li>
+              <li><a href="./product.html">chewing toy</a></li>
+            </ul>
+            <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card mb-3" style="max-width: 590px;">
+      <div class="row g-0">
+        <div class="col-md-7">
+      <a href="./product.html"> <img src="./img/bed.jpg" class="img-fluid rounded-start" alt="...">
+       </a> </div>
+        <div class="col-md-5">
+          <div class="card-body">
+            <h5 class="card-title">BEDDING & TRAVEL</h5>
+            <ul>
+              <li><a href="./product.html">bowls</a></li>
+              <li><a href="./product.html">beds</a></li>
+              <li><a href="./product.html">blakets</a></li>
+              <li><a href="./product.html">cooling mats</a></li>
+              <li><a href="./product.html">mattress</a></li>
+            </ul>
+            <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- ============================about============== -->
+
+  <div class="about">
+    <div class="row">
+
+      <div class="abt1 col-lg-6 col-sm-12">
+        <h1>Your Pet’s Wellness Journey Starts Here</h1>
+        <br>
+        <p class="">BOW BOW isn’t just a brand — it’s a movement dedicated to pets and their people. In this new video, see how
+          BOW BOW empowers pet parents through trusted products, expert advice, and a growing pet community. As the
+          power behind Petsy, BOW BOW brings a new standard of care right to your screen.</p>
+        <div class="button2 mt-4 bg-dark ">
+          <a href="./about.html" class="btn ">Explore →</a>
+
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12">
+        <img src="./img/golden-retriever-puppy.png" alt="">
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================scrolling======================= -->
+  <h3 class=" company text-center mt-5">Shop with brands</h3>
+
+  <div class="scroll-container mt-5">
+    <div class="scroll-track">
+      <img src="./img/brand1.avif" alt="">
+      <img src="./img/brand2.avif" alt="">
+      <img src="./img/brand3.avif" alt="">
+      <img src="./img/brand4.avif" alt="">
+      <img src="./img/brand5.avif" alt="">
+      <img src="./img/brand6.avif" alt="">
+      <img src="./img/brand1.avif" alt="">
+      <img src="./img/brand2.avif" alt="">
+      <img src="./img/brand3.avif" alt="">
+      <img src="./img/brand4.avif" alt="">
+      <img src="./img/brand5.avif" alt="">
+      <img src="./img/brand6.avif" alt="">
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ======================dog treats============== -->
+
+
+  <h2 class="food text-center mt-5">Dog Treats</h2>
+
+  <div class="product2  mt-5 text-nowrap">
+
+
+    <div class="p2 mt-3">
+
+     <a href="./product.html"> <img src="./img/treats.jpeg" alt="..."></a>
+
+      <h6 class=" mt-5 text-center">TRAINING TREATS</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+      <button class="button2 mt-4 mx-5"><a href="./product.html">SEE MORE</a></button>
+
+    </div>
+
+    <div class="p2 mt-3">
+
+     <a href="./product.html"> <img src="./img/biscuit.webp" alt="..."></a>
+
+      <h6 class=" mt-5 text-center">BISCUIT</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+      <button class="button2 mt-4 mx-5"><a href="./product.html">SEE MORE</a></button>
+
+    </div>
+
+    <div class="p2 mt-3">
+
+      <a href="./product.html"><img src="./img/calcium.webp" alt="..."></a>
+
+      <h6 class=" mt-5 text-center">CALCIUM TREATS</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+      <button class="button2 mt-4 mx-5"><a href="./product.html">SEE MORE</a></button>
+
+
+    </div>
+
+    <div class="p2 mt-3">
+
+    <a href="./product.html">  <img src="./img/chew.webp" alt="..."></a>
+
+      <h6 class=" mt-5 text-center">CHEW TREATS</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+      <button class="button2 mt-4 mx-5"><a href="./product.html">SEE MORE</a></button>
+
+    </div>
+
+    <div class="p2 mt-3">
+
+      <a href="./product.html"><img src="./img/meat treats.jpg" alt="..."></a>
+
+      <h6 class=" mt-5 text-center">MEAT TREATS</h6>
+      <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+      <button class="button2 mt-4 mx-5"><a href="./product.html">SEE MORE</a></button>
+
+
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================application=============== -->
+  <div class="application mt-5">
+    <div class="row">
+
+      <div class="col-lg-6 col-sm-12 mt-5">
+        <img src="./img/app.jpg" alt="">
+
+      </div>
+
+      <div class="col-lg-6 col-sm-12 ">
+        <h1 class="mt-5">JOIN BOW BOW CLUB</h1>  <br>
+        <p class="fs-5 fst-italic">Let's Kickstart your pet parent journey,
+           so you can give your puppy the right 
+           start with the Bow Bow app</p> <br> <br>
+        <div class="download d-flex gap-3 col-lg-6 col-sm-12 ">
+          <img src="./img/app1.png" alt="">
+          <img src="./img/app2.png" alt="">
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- ==============================reviews================ -->
+
+  <div class="comment ">
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <h3> &#11088;&#11088;&#11088;&#11088;&#11088;</h3>
+          <p>I needed the delivery in 1 day as it was for my fur baby's girlfriend... This was a complete 'wow
+            factor'. Keep it going guys!!</p>
+          <h4>Apurva Gupte</h4>
+        </div>
+
+
+        <div class="swiper-slide">
+          <h3> &#11088;&#11088;&#11088;&#11088;&#11088;</h3>
+          <p>The delivery time was phenomenal... Thank you petsy for the amazing products 🎁 💖</p>
+          <h4>Hazel Sequeira</h4>
+        </div>
+
+        <div class="swiper-slide">
+          <h3> &#11088;&#11088;&#11088;&#11088;&#11088;</h3>
+          <p>I needed the delivery in 1 day as it was for my fur baby's girlfriend... This was a complete 'wow
+            factor'. Keep it going guys!!</p>
+          <h4>Jeevitha Krish</h4>
+        </div>
+
+        <div class="swiper-slide">
+          <h3> &#11088;&#11088;&#11088;&#11088;&#11088;</h3>
+          <p>We became pet parents recently and we came across Petsy - our lifesaver... looking after Max so easy!
+          </p>
+          <h4>Vicky Khatwani</h4>
+        </div>
+
+        <div class="swiper-slide">
+          <h3> &#11088;&#11088;&#11088;&#11088;&#11088;</h3>
+          <p>We became pet parents recently and we came across Petsy - our lifesaver... looking after Max so easy!
+          </p>
+          <h4>Arun</h4>
+        </div>
+
+      </div>
+
+      <!-- Arrows -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================footer================== -->
+  <div class="box5">
+    <div class="footer-bg"></div>
+    <footer>
+      <div class="last">
+        <h1 class="fs-3 "><a href="#"><span class="fa-solid fa-paw" style="color: white; font-size: 24px;"></span> Bow
+            Bow</a></h1>
+        <ul>
+          <h1 class="fs-5">INFORMATION</h1>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shopping</a></li>
+          <li><a href="#">Bulk Ordering</a></li>
+
+        </ul>
+        <ul>
+          <h1 class="fs-5">CUSTOMER SERVICE</h1>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+
+        </ul>
+
+
+        <div class="box6 w-25">
+          <h3 class="fs-5">NEWSLETTER</h3>
+          <input type="text" class="mt-3">
+          <p class="text-wrap">NR TOWERS, 17th Cross, Sector 4,
+            19th Main Rd, HSR Layout, Bengaluru - 560102</p>
+          <ul class="d-flex gap-3 w-25">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+          </ul>
+        </div>
+
+
+      </div>
+      <hr>
+      <p class="text-center">Copyright © 2025 Bow Bow . All Rights Reserved.</p>
+
+    </footer>
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="./index.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
