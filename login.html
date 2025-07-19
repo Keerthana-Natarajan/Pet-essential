@@ -24,16 +24,17 @@
 
   <!-- =============navbar=============== -->
 
- <nav>
+  <nav>
     <h1><a href="./index.html"><span class="fa-solid fa-paw" style="color: rgb(10, 10, 10); font-size: 24px;"></span>
         Bow Bow</a></h1>
     <div class="navbar">
       <ul>
         <li><a href="./login.html">LOGIN/SIGNUP</a></li>
         <li><a href="cart.html">
-  CART <i class="fa fa-shopping-cart"></i>
-  <span id="cart-badge" class="badge bg-danger ms-1">0</span>
-</a></li></li>
+            CART <i class="fa fa-shopping-cart"></i>
+            <span id="cart-badge" class="badge bg-danger ms-1">0</span>
+          </a></li>
+        </li>
 
 
 
@@ -69,10 +70,11 @@
   <div class="sidebar" id="sidebar">
     <ul>
       <li><a href="./login.html">LOGIN/SIGNUP</a></li>
-       <li><a href="cart.html">
-  CART <i class="fa fa-shopping-cart"></i>
-  <span id="cart-badge" class="badge bg-danger ms-1">0</span>
-</a></li></li>
+      <li><a href="cart.html">
+          CART <i class="fa fa-shopping-cart"></i>
+          <span id="cart-badge" class="badge bg-danger ms-1">0</span>
+        </a></li>
+      </li>
       <li>
         <div class="contact-toggle" onclick="toggleSidebarContact()">CONTACT</div>
         <div class="contact-box" id="sidebarContactBox">
@@ -95,12 +97,12 @@
   </div>
 
 
- 
+
 
   <!-- =======================form================= -->
   <div class="background"></div>
   <div class="container" id="login-container">
-    <div class="form-box" id="loginForm">
+    <div class="form-box" id="loginForm"> 
       <h2>Login</h2>
       <form onsubmit="return validateLogin()">
         <input type="email" id="loginEmail" placeholder="Email">

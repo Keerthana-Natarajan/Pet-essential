@@ -28,6 +28,7 @@ const sidebar = document.getElementById("sidebar");
     document.getElementById("shop-category").scrollIntoView(
       {
         behavior:"smooth"
+        
       }
     );
   }

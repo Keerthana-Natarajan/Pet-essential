@@ -78,6 +78,11 @@ span{
   cursor: pointer;
 }
 
+.menu-line{
+  
+  border-bottom: 3px solid white;
+}
+
 #menu-btn{
   display: none;
   
