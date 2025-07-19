@@ -995,6 +995,9 @@ footer {
         justify-content: center;
       }
 
+      .hero-content h1{
+       font-size: 40px;
+      }
       
 
   .slider img {
