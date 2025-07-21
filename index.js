@@ -1,4 +1,15 @@
 
+
+// Auto Popup Modal 
+  function closeBowPopup() {
+    document.getElementById("bowPopup").style.display = "none";
+  }
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("bowPopup").style.display = "flex";
+    }, 500);
+  });
 // ===================navbar======================
 
 const menuBtn = document.getElementById("menu-btn");

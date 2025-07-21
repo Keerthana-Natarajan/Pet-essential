@@ -16,6 +16,61 @@ a{
   --orange: #d71c0f;
 }
 
+
+.bow-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.bow-popup-content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px 40px;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bow-popup-content h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.bow-popup-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.bow-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 .top {
   /* padding: px 0px 10px 0px; */
 background-color: white;
@@ -29,6 +84,11 @@ text-align: center;
   /* text-align: center; */
   padding: 10px 0px 0px 0px;
 }
+
+
+
+
+
 
 nav {
   
@@ -867,6 +927,27 @@ footer {
 
 @media  all and (max-width:768px) {
 
+   .bow-popup-content {
+    padding: 30px 20px;
+  }
+
+  .bow-popup-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .bow-popup-content p {
+    font-size: 1rem;
+  }
+
+  .bow-close-btn {
+    font-size: 26px;
+    right: 15px;
+  }
+
+
+  .top{
+    font-size: 10px;
+  }
   .navbar{
   display: none;
 }
