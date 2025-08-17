@@ -104,7 +104,7 @@ function validateLogin() {
     if (storedUser && storedUser.email === email && storedUser.password === password) {
       alert("Login successful! Welcome " + storedUser.name);
       // You can redirect the user here
-      // window.location.href = "./home.html";
+     window.location.href = "./home.html";
     } else {
       alert("Invalid email or password");
     }
