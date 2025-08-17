@@ -11,12 +11,12 @@ const sidebar = document.getElementById("sidebar");
 
     function toggleTopContact() {
     const box = document.getElementById("topContactBox");
-    box.style.display = box.style.display === "block" ? "none" : "block";
+    box.style.display = box.style.display === "block" ? "none": "block";
   }
 
   function toggleSidebarContact() {
     const box = document.getElementById("sidebarContactBox");
-    box.style.display = box.style.display === "block" ? "none" : "block";
+    box.style.display = box.style.display === "block" ? "none": "block";
   }
 
 // ===================form=============
@@ -104,7 +104,7 @@ function validateLogin() {
     if (storedUser && storedUser.email === email && storedUser.password === password) {
       alert("Login successful! Welcome " + storedUser.name);
       // You can redirect the user here
-     window.location.href = "./home.html";
+     window.location.href = "./index.html";
     } else {
       alert("Invalid email or password");
     }
